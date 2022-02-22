@@ -2,7 +2,7 @@ pipeline{
         agent any
         stages{
             stage('Install Docker'){
-                steps{
+                steps{ "sudo chmod 755 ./install-docker.sh"
                     sh "./install-docker.sh"
                 }
             }
